@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #bbb;
+    padding: 8px;
+    text-align: left;
+}
+
+.main-header {
+    background-color: #f7d070;
+    text-align: center;
+    font-weight: bold;
+}
+
+.column-header {
+    background-color: #3b7a3e;
+    color: white;
+    cursor: pointer; /* Hiển thị con trỏ dạng click cho cột */
+    user-select: none;
+}
+
+.highlight-row {
+    background-color: yellow !important;
+}
+
+#detail_container {
+    margin-top: 20px;
+}
+
+.detail-header {
+    background-color: #e2efda;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+tbody tr:hover
+{
+    background-color: yellow;
+}
