@@ -29,7 +29,7 @@ th, td {
 }
 
 .highlight-row {
-    background-color: yellow !important;
+    background-color: yellow ;
 }
 
 #detail_container {
