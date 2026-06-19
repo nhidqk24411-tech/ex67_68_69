@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Student Information</title>
+    <link rel="stylesheet" href="css/maincss.css"> 
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" class="detail-header">Student Information</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Student ID</td>
+                <td id="detail_id"></td>
+            </tr>
+            <tr>
+                <td>Student Name</td>
+                <td id="detail_name"></td>
+            </tr>
+            <tr>
+                <td>Birthday</td>
+                <td id="detail_birthday"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td id="detail_gender"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="back-link">
+        <a href="student.html">← Back to Student List</a>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('detail_id').textContent = params.get('id') 
+        document.getElementById('detail_name').textContent = params.get('name')
+        document.getElementById('detail_birthday').textContent = params.get('birthday') 
+        document.getElementById('detail_gender').textContent = params.get('gender') 
+    </script>
+</body>
+</html>
