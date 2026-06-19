@@ -51,8 +51,8 @@ function load_student_fromxml(dataset_path, bodystudents) {
 
 function sortTable(n) {
     var table = document.getElementById("student_table");
-    var tbody = table.tBodies[0]; // lấy tbody đầu tiên
-    var rows = tbody.rows; // chỉ lấy các hàng trong tbody
+    var tbody = table.tBodies[0]; 
+    var rows = tbody.rows;
     var switching = true;
     var dir = "asc";
     var switchcount = 0;
@@ -80,7 +80,6 @@ function sortTable(n) {
             }
         }
         if (shouldSwitch) {
-            // hoán đổi hai hàng
             rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
             switching = true;
             switchcount++;

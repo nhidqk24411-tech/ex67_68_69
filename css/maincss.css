@@ -24,7 +24,7 @@ th, td {
 .column-header {
     background-color: #3b7a3e;
     color: white;
-    cursor: pointer; /* Hiển thị con trỏ dạng click cho cột */
+    cursor: pointer;
     user-select: none;
 }
 
